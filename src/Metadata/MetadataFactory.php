@@ -79,13 +79,15 @@ class MetadataFactory implements AdvancedMetadataFactoryInterface
 
             // check the cache
             if (null !== $this->cache) {
-                if (($classMetadata = $this->cache->loadClassMetadataFromCache($class)) instanceof NullMetadata) {
+                if (($classMetadata = $this->cache->loadClassMetadataFromCache($class)) {
+                    instanceof NullMetadata) {
                     $this->loadedClassMetadata[$name] = $classMetadata;
+                }
                     continue;
                 }
 
                 if (null !== $classMetadata) {
-                    if ( ! $classMetadata instanceof ClassMetadata) {
+                    if (!$classMetadata instanceof ClassMetadata) {
                         throw new \LogicException(sprintf('The cache must return instances of ClassMetadata, but got %s.', var_export($classMetadata, true)));
                     }
 
@@ -129,9 +131,7 @@ class MetadataFactory implements AdvancedMetadataFactoryInterface
     public function getAllClassNames()
     {
         if (!$this->driver instanceof AdvancedDriverInterface) {
-            throw new \RuntimeException(
-                sprintf('Driver "%s" must be an instance of "AdvancedDriverInterface".', get_class($this->driver))
-            );
+            throw new \RuntimeException(sprintf('Driver "%s" must be an instance of "AdvancedDriverInterface".', get_class($this->driver)));
         }
 
         return $this->driver->getAllClassNames();

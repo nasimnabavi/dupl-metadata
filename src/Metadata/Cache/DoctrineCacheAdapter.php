@@ -35,7 +35,7 @@ class DoctrineCacheAdapter implements CacheInterface
      */
     public function loadClassMetadataFromCache(\ReflectionClass $class)
     {
-        $cache = $this->cache->fetch($this->prefix . $class->name);
+        $cache = $this->cache->fetch($this->prefix.$class->name);
         return FALSE === $cache ? null : $cache;
     }
 
@@ -44,7 +44,7 @@ class DoctrineCacheAdapter implements CacheInterface
      */
     public function putClassMetadataInCache(ClassMetadata $metadata)
     {
-        $this->cache->save($this->prefix . $metadata->name, $metadata);
+        $this->cache->save($this->prefix.$metadata->name, $metadata);
     }
 
     /**
@@ -52,6 +52,6 @@ class DoctrineCacheAdapter implements CacheInterface
      */
     public function evictClassMetadataFromCache(\ReflectionClass $class)
     {
-        $this->cache->delete($this->prefix . $class->name);
+        $this->cache->delete($this->prefix.$class->name);
     }
 }

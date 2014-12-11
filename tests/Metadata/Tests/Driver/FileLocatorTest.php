@@ -8,8 +8,7 @@ class FileLocatorTest extends \PHPUnit_Framework_TestCase
 {
     public function testFindFileForClass()
     {
-        $locator = new FileLocator(array(
-            'Metadata\Tests\Driver\Fixture\A' => __DIR__.'/Fixture/A',
+        $locator = new FileLocator(array('Metadata\Tests\Driver\Fixture\A' => __DIR__.'/Fixture/A',
             'Metadata\Tests\Driver\Fixture\B' => __DIR__.'/Fixture/B',
             'Metadata\Tests\Driver\Fixture\C' => __DIR__.'/Fixture/C',
         ));
@@ -30,8 +29,7 @@ class FileLocatorTest extends \PHPUnit_Framework_TestCase
             $this->markTestSkipped('No traits available');
         }
 
-        $locator = new FileLocator(array(
-            'Metadata\Tests\Driver\Fixture\T' => __DIR__.'/Fixture/T',
+        $locator = new FileLocator(array('Metadata\Tests\Driver\Fixture\T' => __DIR__.'/Fixture/T',
         ));
 
         $ref = new \ReflectionClass('Metadata\Tests\Driver\Fixture\T\T');
@@ -40,8 +38,7 @@ class FileLocatorTest extends \PHPUnit_Framework_TestCase
 
     public function testFindFileForGlobalNamespacedClass()
     {
-        $locator = new FileLocator(array(
-            '' => __DIR__.'/Fixture/D',
+        $locator = new FileLocator(array('' => __DIR__.'/Fixture/D',
         ));
 
         require_once __DIR__.'/Fixture/D/D.php';
@@ -51,12 +48,10 @@ class FileLocatorTest extends \PHPUnit_Framework_TestCase
 
     public function testFindAllFiles()
     {
-        $locator = new FileLocator(array(
-            'Metadata\Tests\Driver\Fixture\A' => __DIR__.'/Fixture/A',
+        $locator = new FileLocator(array('Metadata\Tests\Driver\Fixture\A' => __DIR__.'/Fixture/A',
             'Metadata\Tests\Driver\Fixture\B' => __DIR__.'/Fixture/B',
             'Metadata\Tests\Driver\Fixture\C' => __DIR__.'/Fixture/C',
-            'Metadata\Tests\Driver\Fixture\D' => __DIR__.'/Fixture/D'
-        ));
+            'Metadata\Tests\Driver\Fixture\D' => __DIR__.'/Fixture/D'));
 
         $this->assertCount(1, $xmlFiles = $locator->findAllClasses('xml'));
         $this->assertSame('Metadata\Tests\Driver\Fixture\A\A', $xmlFiles[0]);

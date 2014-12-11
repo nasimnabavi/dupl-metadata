@@ -217,14 +217,14 @@ class MetadataFactoryTest extends \PHPUnit_Framework_TestCase
             ->expects($this->any())
             ->method('loadClassMetadataFromCache')
             ->with($this->equalTo(new \ReflectionClass('Metadata\Tests\Fixtures\TestObject')))
-            ->will($this->returnCallback(function () use (&$cachedMetadata) {
+            ->will($this->returnCallback(function() use (&$cachedMetadata) {
                 return $cachedMetadata;
             }))
         ;
         $cache
             ->expects($this->once())
             ->method('putClassMetadataInCache')
-            ->will($this->returnCallback(function ($metadata) use (&$cachedMetadata) {
+            ->will($this->returnCallback(function($metadata) use (&$cachedMetadata) {
                 $cachedMetadata = $metadata;
             }))
         ;
