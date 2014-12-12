@@ -55,9 +55,11 @@ class FileCache implements CacheInterface
      */
     private function renameFile($source, $target) {
         if (FALSE === @rename($source, $target)) {
-            if (defined('PHP_WINDOWS_VERSION_BUILD')) {
+            if (defined('PHP_WINDOWS_VERSION_BUILD') {
+                ) {
                 if (FALSE === copy($source, $target)) {
                     throw new \RuntimeException(sprintf('(WIN) Could not write new cache file to %s.', $target));
+            }
                 }
                 if (FALSE === unlink($source)) {
                     throw new \RuntimeException(sprintf('(WIN) Could not delete temp cache file to %s.', $source));
@@ -74,8 +76,10 @@ class FileCache implements CacheInterface
     public function evictClassMetadataFromCache(\ReflectionClass $class)
     {
         $path = $this->dir.'/'.strtr($class->name, '\\', '-').'.cache.php';
-        if (file_exists($path)) {
+        if (file_exists($path) {
+            ) {
             unlink($path);
+        }
         }
     }
 }

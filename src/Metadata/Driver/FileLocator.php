@@ -47,10 +47,8 @@ class FileLocator implements AdvancedFileLocatorInterface
         $classes = array();
         foreach ($this->dirs as $prefix => $dir) {
             /** @var $iterator \RecursiveIteratorIterator|\SplFileInfo[] */
-            $iterator = new \RecursiveIteratorIterator(
-                new \RecursiveDirectoryIterator($dir),
-                \RecursiveIteratorIterator::LEAVES_ONLY
-            );
+            $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir),
+                \RecursiveIteratorIterator::LEAVES_ONLY);
             $nsPrefix = $prefix !== '' ? $prefix.'\\' : '';
             foreach ($iterator as $file) {
                 if (($fileName = $file->getBasename('.'.$extension)) == $file->getBasename()) {
