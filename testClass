@@ -21,7 +21,7 @@ class RepositoryCodeStructureController
      */
     private $registry;
     
-    if($i = 0;$i<10;i++){'hallo';}
+    if($i = 0;$i<10;i++){var_dump('hallo');}
     
     
     
