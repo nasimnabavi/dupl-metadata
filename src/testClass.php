@@ -1,8 +1,5 @@
 <?php
-
 namespace Bundle\CodeReviewBundle\Controller;
-
-
 class RepositoryCodeStructureController
 {
     /**
@@ -11,21 +8,20 @@ class RepositoryCodeStructureController
      *
      *
      */private $templating;
-
     /**
      * @DI\Inject @var RepositoryRegistry
      */private $repositoryRegistry;
-
     /**
      * @DI\Inject("doctrine")  @var ManagerRegistry
      */private $registry;
-    
+
     public function test() {
-        if($i=0;$i<10;$i++){var_dump('hallo');}
-        if($i=0;$i<10;$i++){var_dump('hallo');}if($i=0;$i<10;$i++){var_dump('hallo');}if($i=0;$i<10;$i++){var_dump('hallo');}
-    }    
-    
-    
+        $i = 0;
+        for($i=0;$i<10;$i++)
+        {var_dump('hallo');}
+        for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}
+    }
+
+
     //////////
 }
- 
