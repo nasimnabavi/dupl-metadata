@@ -1,3 +1,8 @@
+<?php
+
+namespace Bundle\CodeReviewBundle\Controller;
+
+
 class RepositoryCodeStructureController
 {
     /**
