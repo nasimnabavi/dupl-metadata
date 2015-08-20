@@ -1,27 +1,22 @@
 class RepositoryCodeStructureController
 {
     /**
-     * @DI\Inject
-     * @var EngineInterface
+     * @DI\Inject @var EngineInterface
      *
      *
      *
-     */
-    private $templating;
+     */private $templating;
 
     /**
-     * @DI\Inject
-     * @var RepositoryRegistry
-     */
-    private $repositoryRegistry;
+     * @DI\Inject @var RepositoryRegistry
+     */private $repositoryRegistry;
 
     /**
-     * @DI\Inject("doctrine")
-     * @var ManagerRegistry
-     */
-    private $registry;
+     * @DI\Inject("doctrine")  @var ManagerRegistry
+     */private $registry;
     
-    if($i = 0;$i<10;i++){var_dump('hallo');}
+    if($i=0;$i<10;i++){var_dump('hallo');}
+    if($i=0;$i<10;i++){var_dump('hallo');}if($i=0;$i<10;i++){var_dump('hallo');}if($i=0;$i<10;i++){var_dump('hallo');}
     
     
     
@@ -30,3 +25,4 @@ class RepositoryCodeStructureController
     
     //////////
 }
+ 
