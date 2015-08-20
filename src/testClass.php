@@ -20,12 +20,10 @@ class RepositoryCodeStructureController
      * @DI\Inject("doctrine")  @var ManagerRegistry
      */private $registry;
     
-    if($i=0;$i<10;i++){var_dump('hallo');}
-    if($i=0;$i<10;i++){var_dump('hallo');}if($i=0;$i<10;i++){var_dump('hallo');}if($i=0;$i<10;i++){var_dump('hallo');}
-    
-    
-    
-    /
+    public function test() {
+        if($i=0;$i<10;i++){var_dump('hallo');}
+        if($i=0;$i<10;i++){var_dump('hallo');}if($i=0;$i<10;i++){var_dump('hallo');}if($i=0;$i<10;i++){var_dump('hallo');}
+    }    
     
     
     //////////
