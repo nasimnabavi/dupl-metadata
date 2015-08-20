@@ -1,0 +1,29 @@
+class RepositoryCodeStructureController
+{
+    /**
+     * @DI\Inject
+     * @var EngineInterface
+     */
+    private $templating;
+
+    /**
+     * @DI\Inject
+     * @var RepositoryRegistry
+     */
+    private $repositoryRegistry;
+
+    /**
+     * @DI\Inject("doctrine")
+     * @var ManagerRegistry
+     */
+    private $registry;
+    
+    
+    
+    
+    
+    /
+    
+    
+    //////////
+}
