@@ -11,4 +11,10 @@ class myClass
         echo 'Adds another function';
         return true; // and another coding style issue
     }
+    public function myBar() 
+    {
+        echo 'hallo! I hope you work!';
+        return true;
+    }
+    
 }
