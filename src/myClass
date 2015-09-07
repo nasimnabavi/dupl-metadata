@@ -1,6 +1,7 @@
 <?php
 class myClass
 {
+    private $name;
     public function foo() {
         echo 'Foo';
     }
@@ -14,6 +15,15 @@ class myClass
     public function myBar() 
     {
         echo 'hallo! I hope you work!';
+        if(true) {
+            echo 'hello true';
+            if(false){
+                echo 'hello false';
+                if (true) {
+                    echo 'h again';
+                }
+            }
+        }
         return true;
     }
     
