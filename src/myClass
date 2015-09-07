@@ -27,4 +27,7 @@ class myClass
         return true;
     }
     
+    private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
+    
+    
 }
