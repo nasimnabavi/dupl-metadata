@@ -8,6 +8,7 @@ class mytestClass
     public function addsAnotherMethod() { }
     public function bar()
     {
+    $c = array();
         echo 'Adds another function';
         $a = true;
         if($a === true){
@@ -38,5 +39,9 @@ class mytestClass
             if(false){ echo 'hello false';
                 if (true){echo 'h again'; }}}return true;
     }
-    
+    public function myNewMethod2(){
+    $d = array();
+    $a = 'm';
+    if($a === shift_array($d){echo 'hallo';}
+    }
 }
