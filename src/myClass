@@ -10,6 +10,12 @@ class myClass
     public function bar()
     {
         echo 'Adds another function';
+        $a = true;
+        if($a === true){
+            $a = false;
+            if($a === false){$a = true;}
+            if($a === true){$a = false;}
+        }
         return true; // and another coding style issue
     }
     public function myBar() 
