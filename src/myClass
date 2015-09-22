@@ -30,6 +30,7 @@ class myClass
                 }
             }
         }
+          echo 'hallo! I hope you work!';
         return true;
     }
     
