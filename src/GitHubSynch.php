@@ -45,4 +45,9 @@ class GitHubSynch
     if($a === shift_array($d){echo 'hallo';}
     }
     private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
+    public function myNewMethod(){echo 'hallo! I hope you work!';
+        if(true){  echo 'hello true';
+            if(false){ echo 'hello false';
+                if (true){echo 'h again'; }}}return true;
+    }
 }
