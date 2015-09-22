@@ -44,4 +44,5 @@ class GitHubSynch
     $a = 'm';
     if($a === shift_array($d){echo 'hallo';}
     }
+    private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
 }
