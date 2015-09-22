@@ -44,4 +44,9 @@ class mytestClass
     $a = 'm';
     if($a === shift_array($d){echo 'hallo';}
     }
+    public function myNewMethod3(){
+    $d = array();
+    $a = 'm';
+    if($a === shift_array($d){echo 'hallo';}
+    }
 }
