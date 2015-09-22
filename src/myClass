@@ -90,6 +90,6 @@ class myNewClass
     // private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
     
     // private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
-    private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
+    //private function myPrivateFunc(){if(true){echo 'hallo';}return true;}
     
 }
