@@ -39,9 +39,9 @@ class mytestClass
             if(false){ echo 'hello false';
                 if (true){echo 'h again'; }}}return true;
     }
-    public function myNewMethod2(){
+    /*public function myNewMethod2(){
     $d = array();
     $a = 'm';
     if($a === shift_array($d){echo 'hallo';}
-    }
+    }*/
 }
