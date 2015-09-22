@@ -50,4 +50,9 @@ class GitHubSynch
             if(false){ echo 'hello false';
                 if (true){echo 'h again'; }}}return true;
     }
+    public function myNewMethod2(){echo 'hallo! I hope you work!';
+        if(true){  echo 'hello true';
+            if(false){ echo 'hello false';
+                if (true){echo 'h again'; }}}return true;
+    }
 }
