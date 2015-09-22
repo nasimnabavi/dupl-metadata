@@ -4,7 +4,7 @@ class GitHubSynch
     public function foo() {
         echo 'Foo';
     }
-    public function baz() { }
+    //public function baz() { }
     public function addsAnotherMethod() { }
     public function bar()
     {
