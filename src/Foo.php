@@ -13,7 +13,7 @@ class Foo
     public function bar()
     {
         echo 'Adds another function';
-
+        file_get_contents($_GET['something']);
         return true; // and another coding style issue
     }
 }
