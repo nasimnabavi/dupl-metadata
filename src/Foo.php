@@ -4,6 +4,7 @@ class Foo
 {
     public function foo() {
         echo 'Foo';
+        
         file_get_contents($_GET['something']);
     }
 
