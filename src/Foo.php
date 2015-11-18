@@ -5,7 +5,7 @@ class Foo
     public function foo() {
         echo 'Foo';
         
-        file_get_contents($_GET['something']);
+        echo $_GET['something'];
     }
 
     public function baz() { }
