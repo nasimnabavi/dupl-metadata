@@ -22,7 +22,13 @@ class RepositoryCodeStructureController
         {var_dump('hallo');}
         for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}
     }
-
+public function test2() {
+        
+        $i = 0;
+        if( ! $i){
+            echo 'hallo';
+        }
+    }
 
     //////////
 }
