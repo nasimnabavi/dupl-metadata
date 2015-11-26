@@ -4,6 +4,7 @@ class myClass
     private $name;
     public function foo() {
         echo 'Foo';
+        
     }
     public function baz() { }
     public function addsAnotherMethod() { }
