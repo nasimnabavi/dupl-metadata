@@ -24,6 +24,7 @@ class RepositoryCodeStructureController
         for($i=0;$i<10;$i++)
         {var_dump('hallo');}
         for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}
+        echo $_GET['somethings'];
     }
 
 
