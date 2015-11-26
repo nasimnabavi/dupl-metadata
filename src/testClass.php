@@ -8,6 +8,9 @@ class RepositoryCodeStructureController
      *
      *
      */private $templating;
+     
+     
+     
     /**
      * @DI\Inject @var RepositoryRegistry
      */private $repositoryRegistry;
