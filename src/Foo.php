@@ -18,7 +18,11 @@ class Foo
         
         file_get_contents($_GET['something']);
     }
-    public function baz() { }
+    public function baz() {
+        
+        
+        
+    }
     public function addsAnotherMethod() { }
 
     public function bar()
