@@ -21,6 +21,7 @@ class Foo
     }
     
     public function fooDup2() {
+        
         echo 'Foo';
         file_get_contents($_GET['something']);
     }
