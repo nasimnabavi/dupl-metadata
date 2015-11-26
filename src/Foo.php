@@ -18,6 +18,11 @@ class Foo
         
         file_get_contents($_GET['something']);
     }
+    
+    public function fooDup2() {
+        echo 'Foo';
+        file_get_contents($_GET['something']);
+    }
     public function baz() {
         
         
