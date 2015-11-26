@@ -8,6 +8,8 @@ class Foo
         file_get_contents($_GET['something']);
     }
     public function fooDupl() {
+        
+        
         echo 'Foo';
         
         file_get_contents($_GET['something']);
