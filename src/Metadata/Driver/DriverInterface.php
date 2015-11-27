@@ -20,6 +20,8 @@ namespace Metadata\Driver;
 
 interface DriverInterface
 {
+    
+    
     /**
      * @param \ReflectionClass $class
      *
