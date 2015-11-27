@@ -50,6 +50,8 @@ class ClassMetadata implements \Serializable
 
     public function addPropertyMetadata(PropertyMetadata $metadata)
     {
+        
+        
         $this->propertyMetadata[$metadata->name] = $metadata;
     }
 
