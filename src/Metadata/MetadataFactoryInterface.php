@@ -25,6 +25,9 @@ namespace Metadata;
  */
 interface MetadataFactoryInterface
 {
+    
+    
+    
     /**
      * Returns the gathered metadata for the given class name.
      *
