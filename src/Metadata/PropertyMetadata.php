@@ -49,6 +49,8 @@ class PropertyMetadata implements \Serializable
     public function getValue($obj)
     {
         return $this->reflection->getValue($obj);
+        
+        
     }
 
     /**
