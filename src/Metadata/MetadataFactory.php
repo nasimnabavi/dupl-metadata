@@ -24,6 +24,9 @@ use Metadata\Cache\CacheInterface;
 
 class MetadataFactory implements AdvancedMetadataFactoryInterface
 {
+    
+    
+    
     private $driver;
     private $cache;
     private $loadedMetadata = array();
