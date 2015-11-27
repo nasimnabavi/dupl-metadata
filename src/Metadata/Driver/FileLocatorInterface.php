@@ -4,6 +4,8 @@ namespace Metadata\Driver;
 
 interface FileLocatorInterface
 {
+    
+    
     /**
      * @param \ReflectionClass $class
      * @param string           $extension
