@@ -25,6 +25,8 @@ namespace Metadata\Driver;
  */
 interface AdvancedDriverInterface extends DriverInterface
 {
+    
+    
     /**
      * Gets all the metadata class names known to this driver.
      *
