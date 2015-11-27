@@ -34,6 +34,8 @@ final class DriverChain implements AdvancedDriverInterface
 
     public function loadMetadataForClass(\ReflectionClass $class)
     {
+        
+        
         foreach ($this->drivers as $driver) {
             if (null !== $metadata = $driver->loadMetadataForClass($class)) {
                 return $metadata;
