@@ -4,6 +4,9 @@ namespace Metadata;
 
 interface MergeableInterface
 {
+    
+    
+    
     /**
      * @param MergeableInterface $object
      *
