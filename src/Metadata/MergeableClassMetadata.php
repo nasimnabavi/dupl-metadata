@@ -10,6 +10,8 @@ class MergeableClassMetadata extends ClassMetadata implements MergeableInterface
             throw new \InvalidArgumentException('$object must be an instance of MergeableClassMetadata.');
         }
 
+
+
         $this->name = $object->name;
         $this->reflection = $object->reflection;
         $this->methodMetadata = array_merge($this->methodMetadata, $object->methodMetadata);
