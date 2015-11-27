@@ -26,6 +26,9 @@ namespace Metadata;
 class ClassHierarchyMetadata
 {
     public $classMetadata = array();
+    
+    
+    
 
     public function addClassMetadata(ClassMetadata $metadata)
     {
