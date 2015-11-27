@@ -9,6 +9,8 @@ class FileLocator implements AdvancedFileLocatorInterface
     public function __construct(array $dirs)
     {
         $this->dirs = $dirs;
+        
+        
     }
 
     public function getDirs()
