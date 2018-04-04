@@ -21,6 +21,7 @@ class RepositoryCodeStructureController
         for($i=0;$i<10;$i++)
         {var_dump('hallo');}
         for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}for($i=0;$i<10;$i++){var_dump('hallo');}
+        var_dump("test");
     }
 public function test2() {
         
@@ -28,6 +29,8 @@ public function test2() {
         if( ! $i){
             echo 'hallo';
         }
+
+        if (true) { echo 'true';}
     }
 
     //////////

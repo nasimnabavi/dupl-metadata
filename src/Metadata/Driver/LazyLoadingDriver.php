@@ -20,6 +20,11 @@ class LazyLoadingDriver implements DriverInterface
      */
     public function loadMetadataForClass(\ReflectionClass $class)
     {
+        $a = true;
+        if ($a) {
+            $a = false;
+        }
         return $this->container->get($this->realDriverId)->loadMetadataForClass($class);
+
     }
 }
