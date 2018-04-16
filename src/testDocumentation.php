@@ -5,15 +5,22 @@ class TestIssues{
 
 
 
-    public function foo(string $str) {
-        /* @var string $barReturn **/
-        $barReturn = $this->bar($str);
+    /*
+     * @param array|double $metadata**/
+    public function foo(string $filter, $metadata) {
+        /* @var string $filteredMeta **/
+        $filteredMeta = $this->filterMetadata($filter);
 
-        return $barReturn;
+        $revisedMeta = $this->filterMetadata($filter);
+        $result = $this->analyzeMetadata($revisedMeta);
+
+        if (is_array($result)) {
+            $result = $result[0];
+        }
     }
 
     /* @return null|string **/
-    public function bar($tmp) {
+    public function filterMetadata($tmp) {
 
         if ($tmp) {
             return null;
@@ -22,5 +29,34 @@ class TestIssues{
         }
     }
 
+    /* @param string $metadata
+     * @param array $filter
+     *
+     * @return boolean
+     **/
+    function analyzeMetadata($metadata, $filter = array()) {
+
+        if (strlen($metadata) > 10) {
+            return true;
+        }
+
+        return false;
+    }
+
     //////////
 }
+
+/* @param string $metadata **/
+/*function analyzeMetadata($metadata) {
+
+    return $metadata;
+}
+*/
+
+/* @param array $metadata **/
+/*function analyzeMetadata($metadata) {
+
+
+
+    return $metadata;
+}*/
