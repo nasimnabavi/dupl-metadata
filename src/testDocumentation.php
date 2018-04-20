@@ -7,9 +7,12 @@ class TestIssues{
 
     /*
      * @param array|double $metadata**/
-    public function foo(string $filter, $metadata) {
+    public function foo($filter, $metadata) {
         /* @var string $filteredMeta **/
-        $filteredMeta = $this->filterMetadata($filter);
+        $filteredMeta = $this->filterMetadata($filter, $metadata);
+        $result = $this->analyzeMetadata($filteredMeta);
+
+        if ($result) return array();
 
         $revisedMeta = $this->filterMetadata($filter);
         $result = $this->analyzeMetadata($revisedMeta);
@@ -17,15 +20,17 @@ class TestIssues{
         if (is_array($result)) {
             $result = $result[0];
         }
+
+        return $result;
     }
 
     /* @return null|string **/
-    public function filterMetadata($tmp) {
+    public function filterMetadata($filter, $data) {
 
-        if ($tmp) {
+        if ($filter) {
             return null;
         } else {
-            return "str";
+            return $data . "str";
         }
     }
 
