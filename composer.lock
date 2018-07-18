@@ -22,9 +22,6 @@
                 "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449",
                 "shasum": ""
             },
-            "require": {
-                "php": ">=5.3.2"
-            },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
             },
@@ -88,12 +85,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": [
-
-    ],
-    "platform": {
-        "php": ">=5.3.0"
-    },
-    "platform-dev": [
 
     ]
 }
