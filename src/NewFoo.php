@@ -1,6 +1,6 @@
 <?php
 
-class FooAdded
+class NewFoo
 {
     public function foo(){echo 'Foo';
 

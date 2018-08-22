@@ -1,6 +1,6 @@
 <?php
 
-class Foo
+class NewFoo
 {
     public function foo(){echo 'Foo';
 
@@ -19,16 +19,12 @@ class Foo
         file_get_contents($_GET['something']);
     }
     public function baz() {
-        echo 'Adds another function';
-        file_get_contents($_GET['something']);
-    }
 
+    }
 
     public function bazAdded() {}
     public function bar()
     {
-        echo 'Adds another function';
-        file_get_contents($_GET['something']);
         return true; // and another coding style issue
     }
 }
